@@ -1,0 +1,39 @@
+{
+    // \ multi
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.f11",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\nclear; make meta\n"}}
+            ]
+        },
+        {
+            "command": "multiCommand.f12",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\nclear; make wasm\n"}}
+            ]
+        },
+    ],
+    // / multi
+
+    // \ files
+    "files.exclude": {
+        "**/p/":true, "**/docs/**":true,
+    },
+    "files.watcherExclude": {
+        "**/p/":true, "**/docs/**":true,
+    },
+    "files.associations": {
+    },
+    // / files
+
+    // \ editor
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "workbench.tree.indent": 32,
+    // / editor
+}

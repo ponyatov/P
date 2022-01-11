@@ -1,0 +1,12 @@
+{
+  "name": "p",
+  "version": "0.0.1",
+  "description": "meta/prototype with WASM frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitry Ponyatov <dponyatov@gmail.com>",
+  "license": "MIT",
+  "type": "module"
+}

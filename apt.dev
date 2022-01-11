@@ -1,0 +1,4 @@
+code meld doxygen
+build-essential flex bison
+qtbase5-dev
+wabt npm

@@ -1,0 +1,3 @@
+;; <watfile:lib.wat>
+
+(module)
