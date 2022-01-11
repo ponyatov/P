@@ -89,4 +89,21 @@ SHADOW ?= shadow
 MERGE  += README.md Makefile apt.txt apt.dev $(S)
 MERGE  += bin doc lib src tmp .gitignore
 MERGE  += requirements.txt
+
+dev:
+	git push -v
+	git checkout $@
+	git pull -v
+	git checkout $(SHADOW) -- $(MERGE)
+
+shadow:
+	git push -v
+	git checkout $(SHADOW)
+	git pull -v
+
+.PHONY: release
+release:
+	git tag $(NOW)-$(REL)
+	git push -v --tags
+	$(MAKE) shadow
 # / merge
